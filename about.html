@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <script src="about.js"></script>
+    <title>About</title>
+</head>
+<body>
+    <section class="header-sec">
+        <div class="welcome"><p>Welcome to my site!</p></div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="courses.php">Courses</a></li>
+                <li><a href="grades.php">Grades</a></li>
+                <li class="login"><a href="login.php">Login</a></li>
+                <li class="profile"><a href="profile.php">Profile</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <main>
+        <p class="cv-download">You can view / download my CV <a href="mycv.pdf" rel="PDF">here</a></p>
+        
+        <div class="dropdown-menu">
+            <button class="drop-button">Select Information...</button>
+            <div class="dropdown-content">
+                <button class="dropdown-item" onclick="dropDownMenuFunc(1)">Personal Information</button>
+                <button class="dropdown-item" onclick="dropDownMenuFunc(2)">Education</button>
+                <button class="dropdown-item" onclick="dropDownMenuFunc(3)">Work Experience</button>
+                <button class="dropdown-item" onclick="dropDownMenuFunc(4)">Skills</button>
+            </div>
+        </div>
+
+        <div class="info-choice"></div>
+    </main>
+
+    <footer>
+        <div class="hr-line"><hr></div>
+        <h3>Motto placeholder</h3>
+        <nav class="footer-nav cut-off-border">
+            Links:
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Facebook</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>

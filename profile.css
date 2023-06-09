@@ -1,0 +1,203 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    background-color: #262222;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    min-width: 300px;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.header-sec {
+    display: grid;
+    background-color: #00D5A4;
+    color: white;
+    font-size: 22px;
+    min-height: min-content;
+    height: 12vh;
+    max-height: 15vh;
+}
+
+.header-sec a {
+    color: white;
+}
+
+.welcome {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+}
+
+.welcome p {
+    display: flex;
+    font-size: 18px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+}
+
+.header-nav ul {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+main {
+    margin-top: 3%;
+    background-color: rgba(38, 34, 34, 0.1);
+    width: 100%;
+    overflow: scroll;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    border: none;
+    background-color: #1a1818;
+    color:white;
+}
+
+input, label, textarea {
+    margin-bottom: 20px;
+}
+
+input:not([type="checkbox"]) {
+    min-height: 28px;
+}
+
+input[type="file"] {
+    display: flex;
+    align-items: center;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    background-color: #161515;
+    border: 1px solid #111111;
+    border-radius: 16px;
+}
+
+.exam-checkbox {
+    display: flex;
+    align-items: flex-start;
+    height: 13px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    min-height: 50px;
+    resize: none;
+}
+
+.form-container section {
+    width: 30%;
+    min-width: 300px;
+    /* text-align: center; for section only if other css doesn't work*/ 
+}
+
+.form-container section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+} 
+
+.about-page h2, .courses-page h2, .grades-page h2, .links h2{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+.update-form h2 {
+    margin-top: 40px;
+}
+
+select {
+    background-color: #1a1818;
+    color:white;
+    height: 28px;
+    margin-bottom: 20px;
+    border: 1px solid #443f3f;
+}
+
+select:active {
+    border: 1px solid #443f3f;
+}
+.hr-line {
+    display: flex;
+    justify-content: center;
+}
+
+.hr-line hr{
+    height: 1px;
+    border: none;
+    background-color: rgba(203, 203, 203, 0.8);
+    width: 90%;
+}
+
+footer {
+    margin-top: 2%;
+    display: grid;
+    color: #D2D2D2;
+    bottom: 0;
+    width: 100%;
+    background-color: #262222;
+    color: white;
+    min-height: min-content;
+}
+
+footer a {
+    color: #D2D2D2;
+    text-decoration: none;
+}
+
+footer h3 {
+    padding-left: 10%;
+    font-size: 1.1em;
+    margin-top: 2.5%;
+    color: #D2D2D2;
+}
+
+footer nav {
+    text-align: center;
+    margin-top: 5%;
+    display: block;
+    justify-content: center;
+    color: #D2D2D2;
+}
+
+footer ul {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.4%;
+}

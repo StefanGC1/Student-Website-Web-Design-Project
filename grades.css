@@ -1,0 +1,159 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    background-color: #262222;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    min-width: 300px;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.welcome {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+}
+
+.welcome p {
+    display: flex;
+    font-size: 18px;
+}
+
+.header-sec {
+    display: grid;
+    background-color: #00D5A4;
+    color: white;
+    font-size: 22px;
+    min-height: min-content;
+    height: 12vh;
+    max-height: 15vh;
+}
+
+.header-sec a {
+    color: white;
+}
+
+.profile {
+    display:none;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 8vh;
+}
+
+.header-nav ul {
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+main {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+#grade-list {
+    width: 100%;
+    padding-right: 3%;
+}
+
+.grade-item {
+    margin-top: 30px;
+    display: inline-block;
+    width: 30%;
+    max-width: 40%;
+    background-color: #1a1818;;
+    border-width: 8px;
+    border-style: solid;
+    border-image-slice: 1;
+    /* #4003a1 */
+    border-image-source: linear-gradient(10deg ,#350485, #5623a8);
+    padding: 15px 20px 20px 20px;
+    overflow-wrap: break-word;
+    margin-left: 3%;
+}
+
+.grade-item h2 {
+    margin-bottom: 15px;
+}
+
+.grade-item table {
+    border-collapse: collapse;
+}
+
+.grade-item table td {
+    border: 4px solid rgb(9, 139, 109);
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    width: 25px;
+}
+
+.hr-line {
+    display: flex;
+    justify-content: center;
+}
+
+.hr-line hr{
+    height: 1px;
+    border: none;
+    background-color: rgba(203, 203, 203, 0.8);
+    width: 90%;
+}
+
+footer {
+    display: grid;
+    color: #D2D2D2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #262222;
+    color: white;
+    min-height: min-content;
+}
+
+footer a {
+    color: #D2D2D2;
+    text-decoration: none;
+}
+
+footer h3 {
+    padding-left: 10%;
+    font-size: 1.1em;
+    margin-top: 2.5%;
+    color: #D2D2D2;
+}
+
+footer nav {
+    text-align: center;
+    margin-top: 5%;
+    display: block;
+    justify-content: center;
+    color: #D2D2D2;
+}
+
+footer ul {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.4%;
+}
